@@ -1,0 +1,157 @@
+body{
+	background-image:url(../img/back01.png);
+	font-family: sans-serif;
+	padding:0;
+	margin:0;	
+}
+.wrap{
+	width: 26%;
+	background:white;
+	margin: 0 auto;
+	border:thin solid #81CFE0;
+	padding: 20px;
+}
+.form{
+	width:94.5%;
+	border:thin solid #81CFE0;
+	height:15px;
+	padding:10px;
+}
+.form-select{
+	border:thin solid #81CFE0;
+	padding:10px;
+	width:94.5%;
+}
+.btn{
+	width:100.5%;
+	border:none;
+	background:#81CFE0;
+	color:white;
+	padding:10px;
+}
+
+.btn:hover {	
+	background:#52B3D9;
+	cursor:pointer;
+}
+.btnn{
+	width:25%;
+	border-radius: 4px;
+	float:left;
+	text-align: center;
+	margin-right: 10px;
+	border:none;
+	color:white;
+	background:#81CFE0;
+	padding:10px;
+}
+.btnn:hover {	
+	background:#52B3D9;
+	cursor:pointer;
+}
+.a{
+	font-size: 13px;
+}
+.judul{
+	color:#81CFE0;
+}
+
+nav{
+	width:99.2%;
+	height:50px;
+	padding:5px;
+	background-color: #f8f8f8;
+  	border-color: #e7e7e7;
+}
+.dropdown{
+	list-style: none;
+}
+.dropdown li{
+	float:left;
+	padding-left:10px;
+}
+.dropdown li a{
+	text-decoration: none;
+	color:black;
+}
+.right{
+	float:right;
+	margin-right: 50px;
+}
+.brand{
+  padding: 15px 15px;
+  font-size: 18px;
+  color:#CCC;
+  height: 50px;
+}
+.pesan{
+	width:80%;
+	padding:20px;
+	background:#5bc0de;
+	color:white;
+	border-radius: 4px;
+}
+.btn-menu{
+	width:100px !important;
+	padding:10px;
+	margin-right: 5px;
+	float:left;
+	text-align: center;
+	border-radius: 4px;
+	background:#5bc0de;
+	color:white;
+}
+.kotak-atas{
+	width:80%;
+	height:100px;
+	margin:0 auto;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	background:white;
+	padding:20px;
+}
+.kotak-bawah{
+	width:80%;
+	margin:0 auto;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	background:white;
+	padding:20px;
+}
+.kotak-menu{
+	width:100px !important;
+	height:100px !important;
+	color: #ffffff;
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 11px;
+  	background-color: #5bc0de;
+  	border-color: #46b8da;
+	border-radius: 5px;
+}
+.kotak-menu-aktif{
+	width:100px !important;
+	height:100px !important;
+	color: #ffffff;
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 11px;
+  	background-color: #177e9d;
+  	border-color: #1a8bad;
+	border-radius: 5px;
+}
+.table{
+	border-collapse: collapse;
+	border-color:#50aacb;
+
+}
+.table tr td{
+	padding:5px;
+}
+.table tr a{
+	text-decoration: none;
+	color:#50aacb;
+}
