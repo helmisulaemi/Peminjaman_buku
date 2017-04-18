@@ -12,9 +12,9 @@
 	include("library/lib.php");
 	$perintah = new oop();
 
-	$username = $_POST['username'];
-	$password = md5(trim($_POST['password']));
-	$nama_form = "page/index.php?menu=utama";
+	@$username = $_POST['username'];
+	@$password = md5(trim($_POST['password']));
+	@$nama_form = "page/index.php?menu=utama";
 	if(isset($_POST['masuk'])){
 		$perintah->login("user",$username,$password,$nama_form);
 	}

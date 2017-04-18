@@ -1,11 +1,11 @@
 <?php
-	$carikode = mysql_fetch_array(mysql_query("select * from buku order by kd_buku DESC"));
-	$kode = substr($carikode['kd_buku'],2,3)+1;
-	$nextkode = sprintf("BK"."%03s",$kode);
+	@$carikode = mysql_fetch_array(mysql_query("select * from buku order by kd_buku DESC"));
+	@$kode = substr($carikode['kd_buku'],2,3)+1;
+	@$nextkode = sprintf("BK"."%03s",$kode);
 
-	$table = "buku";
-	$redirect = "?menu=buku";
-	$where = "kd_buku = '$_GET[id]'";
+	@$table = "buku";
+	@$redirect = "?menu=buku";
+	@$where = "kd_buku = '$_GET[id]'";
 	if(isset($_POST['simpan'])){
 		$data = array(
 					'kd_buku'=>$_POST['id'],
@@ -39,29 +39,29 @@
 		<tr>
 			<td>Id Buku</td>
 			<td>:</td>
-			<td><input type="text" name="id" class="form" value="<?php if($_GET[id]==''){echo $nextkode;}else{echo $edit[0];} ?>" required readonly></td>
+			<td><input type="text" name="id" class="form" value="<?php if(@$_GET[id]==''){echo $nextkode;}else{echo @$edit[0];} ?>" required readonly></td>
 		</tr>
 		<tr>
 			<td>Nama Buku</td>
 			<td>:</td>
-			<td><input type="text" name="nama" class="form" value="<?php echo $edit[1] ?>" required></td>
+			<td><input type="text" name="nama" class="form" value="<?php echo @$edit[1] ?>" required></td>
 		</tr>
 		<tr>
 			<td>Penerbit</td>
 			<td>:</td>
-			<td><input type="text" name="pener" class="form" value="<?php echo $edit[2]?>" required></td>
+			<td><input type="text" name="pener" class="form" value="<?php echo @$edit[2]?>" required></td>
 		</tr>
 		<tr>
 			<td>Pengarang</td>
 			<td>:</td>
-			<td><input type="text" name="penga" class="form" value="<?php echo $edit[3] ?>" required></td>
+			<td><input type="text" name="penga" class="form" value="<?php echo @$edit[3] ?>" required></td>
 		</tr>
 		<tr>
 			<td>Kategori</td>
 			<td>:</td>
 			<td>
 				<select name="kate" class="form-select" required>
-					<option value="<?php echo $edit[4] ?>"><?php echo $edit[5] ?></option>
+					<option value="<?php echo $edit[4] ?>"><?php echo @$edit[5] ?></option>
 					<?php
 						$a = $perintah->tampil("kategori");
 						foreach ($a as $b) {
@@ -75,7 +75,7 @@
 			<td></td>
 			<td></td>
 			<td>
-				<?php if($_GET['id']==''){ ?>
+				<?php if(@$_GET['id']==''){ ?>
 				<input type="submit" name="simpan" value="SIMPAN" class="btnn">
 				<input type="reset" value="RESET" class="btnn">
 				<?php }else{ ?>
